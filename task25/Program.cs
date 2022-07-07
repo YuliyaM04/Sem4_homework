@@ -7,14 +7,16 @@ int numA = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число B: ");
 int numB = Convert.ToInt32(Console.ReadLine());
 
-int numDeg (int numA, int numB)
+int numDeg(int numA, int numB)
 {
+    int i = 1;
     int result = 1;
-    for (int i = 1; i <= numB; i++)
+    while (i <= numB)
     {
         result = result * numA;
+        i++;
     }
     return result;
 }
 int numberDeg = numDeg(numA, numB);
-Console.WriteLine($"Число {numA} в степени {numB} = " + numberDeg); 
+Console.WriteLine($"Число {numA} в степени {numB} = " + numberDeg);
